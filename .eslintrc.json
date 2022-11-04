@@ -5,17 +5,39 @@
     "@typescript-eslint"
   ],
   "rules": {
-    "semi": ["error", "never"],
-    "quotes": ["error", "single"],
-    "indent": ["error", 4, { "SwitchCase": 1 } ],
-    "jsx-quotes": ["error", "prefer-single"],
-    "object-curly-spacing": ["error", "always"],
-    "eol-last": ["warn", "never"]
+    "semi": [
+      "error",
+      "never"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "indent": [
+      "error",
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "jsx-quotes": [
+      "error",
+      "prefer-single"
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "eol-last": [
+      "warn",
+      "never"
+    ]
   },
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended"
   ],
   "env": {
     "node": true,

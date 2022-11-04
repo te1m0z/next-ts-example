@@ -1,6 +1,12 @@
+import React                    from 'react'
 import { Button, Htag, P, Tag } from '../components'
 
 const Home = () => {
+
+    React.useEffect(() => {
+        console.log('da')
+    }, [])
+
     return (
         <>
             <Htag size={ 'h1' }>hello</Htag>
@@ -34,7 +40,7 @@ const Home = () => {
             <Tag color={ 'gray' } size={ 's' }>hh.ru</Tag>
             <Tag color={ 'gray' } size={ 'm' }>hh.ru</Tag>
             <Tag color={ 'green' } size={ 's' }>hh.ru</Tag>
-            <Tag color={ 'green' } size={ 'm' } href={'/hello'}>hh.ru</Tag>
+            <Tag color={ 'green' } size={ 'm' } href={ '/hello' }>hh.ru</Tag>
             <Tag color={ 'primary' } size={ 's' }>hh.ru</Tag>
             <Tag color={ 'primary' } size={ 'm' }>hh.ru</Tag>
         </>
