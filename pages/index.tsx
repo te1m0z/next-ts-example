@@ -1,4 +1,4 @@
-import { Button, Htag, P } from '../components'
+import { Button, Htag, P, Tag } from '../components'
 
 const Home = () => {
     return (
@@ -10,7 +10,8 @@ const Home = () => {
             <Button appearance={ 'ghost' }>Кнопка</Button>
 
 
-            <P size={'s'} className={'test'}>Выше указаны программы Adobe InDesign, Adobe Illustrator, Corel Draw и ими можно успешно пользоваться
+            <P size={ 's' } className={ 'test' }>Выше указаны программы Adobe InDesign, Adobe Illustrator, Corel Draw и
+                ими можно успешно пользоваться
                 дома или в дороге. Современные ноутбуки хорошо справляются с нагрузкой, так зачем загонять специалиста в
                 душный офис. В этой профессии важным считается вдохновение, поэтому дизайнеры ищут его в разных
                 местах.</P>
@@ -20,10 +21,22 @@ const Home = () => {
                 душный офис. В этой профессии важным считается вдохновение, поэтому дизайнеры ищут его в разных
                 местах.</P>
 
-            <P size={'l'}>Выше указаны программы Adobe InDesign, Adobe Illustrator, Corel Draw и ими можно успешно пользоваться
+            <P size={ 'l' }>Выше указаны программы Adobe InDesign, Adobe Illustrator, Corel Draw и ими можно успешно
+                пользоваться
                 дома или в дороге. Современные ноутбуки хорошо справляются с нагрузкой, так зачем загонять специалиста в
                 душный офис. В этой профессии важным считается вдохновение, поэтому дизайнеры ищут его в разных
                 местах.</P>
+
+            <Tag color={ 'red' } size={ 's' }>hh.ru</Tag>
+            <Tag color={ 'red' } size={ 'm' }>hh.ru</Tag>
+            <Tag color={ 'ghost' } size={ 's' }>hh.ru</Tag>
+            <Tag color={ 'ghost' } size={ 'm' }>hh.ru</Tag>
+            <Tag color={ 'gray' } size={ 's' }>hh.ru</Tag>
+            <Tag color={ 'gray' } size={ 'm' }>hh.ru</Tag>
+            <Tag color={ 'green' } size={ 's' }>hh.ru</Tag>
+            <Tag color={ 'green' } size={ 'm' } href={'/hello'}>hh.ru</Tag>
+            <Tag color={ 'primary' } size={ 's' }>hh.ru</Tag>
+            <Tag color={ 'primary' } size={ 'm' }>hh.ru</Tag>
         </>
     )
 }
