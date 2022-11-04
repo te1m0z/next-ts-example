@@ -1,13 +1,29 @@
-import { Button, Htag } from '../components'
+import { Button, Htag, P } from '../components'
 
 const Home = () => {
     return (
         <>
-            <Htag size={'h1'}>hello</Htag>
+            <Htag size={ 'h1' }>hello</Htag>
 
-            <Button appearance={'primary'}>Кнопка</Button>
+            <Button appearance={ 'primary' } arrowDirection={ 'down' }>Кнопка</Button>
 
-            <Button appearance={'ghost'}>Кнопка</Button>
+            <Button appearance={ 'ghost' }>Кнопка</Button>
+
+
+            <P size={'s'} className={'test'}>Выше указаны программы Adobe InDesign, Adobe Illustrator, Corel Draw и ими можно успешно пользоваться
+                дома или в дороге. Современные ноутбуки хорошо справляются с нагрузкой, так зачем загонять специалиста в
+                душный офис. В этой профессии важным считается вдохновение, поэтому дизайнеры ищут его в разных
+                местах.</P>
+
+            <P>Выше указаны программы Adobe InDesign, Adobe Illustrator, Corel Draw и ими можно успешно пользоваться
+                дома или в дороге. Современные ноутбуки хорошо справляются с нагрузкой, так зачем загонять специалиста в
+                душный офис. В этой профессии важным считается вдохновение, поэтому дизайнеры ищут его в разных
+                местах.</P>
+
+            <P size={'l'}>Выше указаны программы Adobe InDesign, Adobe Illustrator, Corel Draw и ими можно успешно пользоваться
+                дома или в дороге. Современные ноутбуки хорошо справляются с нагрузкой, так зачем загонять специалиста в
+                душный офис. В этой профессии важным считается вдохновение, поэтому дизайнеры ищут его в разных
+                местах.</P>
         </>
     )
 }

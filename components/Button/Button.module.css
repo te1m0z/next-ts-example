@@ -35,3 +35,22 @@
 .ghost:hover {
     background: var(--gray-light);
 }
+
+
+
+.arrow {
+    display: inline-block;
+
+    margin-left: 10px;
+
+    transition: 200ms ease;
+}
+
+.arrow.down {
+    transform: rotate(90deg);
+}
+
+
+.button.primary .arrow svg {
+    fill: var(--gray-light)
+}
