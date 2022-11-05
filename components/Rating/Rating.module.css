@@ -1,0 +1,19 @@
+.rating {
+    display: flex;
+}
+
+.star {
+
+}
+
+.rating > span ~ span .star {
+    margin-left: 5px;
+}
+
+.filled {
+    fill: var(--primary);
+}
+
+.star.editable {
+    cursor: pointer;
+}

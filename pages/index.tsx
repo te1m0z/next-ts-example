@@ -1,11 +1,10 @@
-import React                    from 'react'
-import { Button, Htag, P, Tag } from '../components'
+import React                            from 'react'
+import { Button, Htag, P, Rating, Tag } from '../components'
+import { RatingCount }                  from '../components/Rating/Rating.props'
 
 const Home = () => {
 
-    React.useEffect(() => {
-        console.log('da')
-    }, [])
+    const [ rating, setRating ] = React.useState<RatingCount>( 4 )
 
     return (
         <>
@@ -43,6 +42,8 @@ const Home = () => {
             <Tag color={ 'green' } size={ 'm' } href={ '/hello' }>hh.ru</Tag>
             <Tag color={ 'primary' } size={ 's' }>hh.ru</Tag>
             <Tag color={ 'primary' } size={ 'm' }>hh.ru</Tag>
+
+            <Rating rating={ rating } isEditable={ true } setRating={ setRating } />
         </>
     )
 }
