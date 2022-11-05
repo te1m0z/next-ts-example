@@ -1,6 +1,7 @@
 import React                            from 'react'
 import { Button, Htag, P, Rating, Tag } from '../components'
 import { RatingCount }                  from '../components/Rating/Rating.props'
+import { withLayout }                   from '../layout/Layout'
 
 const Home = () => {
 
@@ -9,29 +10,14 @@ const Home = () => {
     return (
         <>
             <Htag size={ 'h1' }>hello</Htag>
-
             <Button appearance={ 'primary' } arrowDirection={ 'down' }>Кнопка</Button>
-
             <Button appearance={ 'ghost' }>Кнопка</Button>
-
-
             <P size={ 's' } className={ 'test' }>Выше указаны программы Adobe InDesign, Adobe Illustrator, Corel Draw и
-                ими можно успешно пользоваться
-                дома или в дороге. Современные ноутбуки хорошо справляются с нагрузкой, так зачем загонять специалиста в
-                душный офис. В этой профессии важным считается вдохновение, поэтому дизайнеры ищут его в разных
-                местах.</P>
-
+                ими можно успешно пользоваться</P>
             <P>Выше указаны программы Adobe InDesign, Adobe Illustrator, Corel Draw и ими можно успешно пользоваться
-                дома или в дороге. Современные ноутбуки хорошо справляются с нагрузкой, так зачем загонять специалиста в
-                душный офис. В этой профессии важным считается вдохновение, поэтому дизайнеры ищут его в разных
-                местах.</P>
-
+                дома или в дороге.</P>
             <P size={ 'l' }>Выше указаны программы Adobe InDesign, Adobe Illustrator, Corel Draw и ими можно успешно
-                пользоваться
-                дома или в дороге. Современные ноутбуки хорошо справляются с нагрузкой, так зачем загонять специалиста в
-                душный офис. В этой профессии важным считается вдохновение, поэтому дизайнеры ищут его в разных
-                местах.</P>
-
+                пользоваться.</P>
             <Tag color={ 'red' } size={ 's' }>hh.ru</Tag>
             <Tag color={ 'red' } size={ 'm' }>hh.ru</Tag>
             <Tag color={ 'ghost' } size={ 's' }>hh.ru</Tag>
@@ -48,4 +34,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default withLayout( Home )
